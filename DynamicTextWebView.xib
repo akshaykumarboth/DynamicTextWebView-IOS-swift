@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicTextWebView" customModule="ViksitIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="textStackView" destination="gkm-2J-ltP" id="wn6-kj-qGM"/>
+                <outlet property="textView" destination="64M-oA-5e5" id="jkC-9W-QdO"/>
+                <outlet property="view" destination="Lr0-pm-N81" id="rPo-Br-efC"/>
+                <outlet property="webView" destination="GPl-md-v2e" id="e0J-He-dLf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Lr0-pm-N81">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-2J-ltP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64M-oA-5e5">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                            <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label l Label Label Label Label Label Label</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="64M-oA-5e5" firstAttribute="top" secondItem="gkm-2J-ltP" secondAttribute="top" id="6ZS-Ae-tsb"/>
+                        <constraint firstAttribute="trailing" secondItem="64M-oA-5e5" secondAttribute="trailing" id="cmG-Nk-ffD"/>
+                        <constraint firstItem="64M-oA-5e5" firstAttribute="leading" secondItem="gkm-2J-ltP" secondAttribute="leading" id="vmH-5m-1Zd"/>
+                    </constraints>
+                </stackView>
+                <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="GPl-md-v2e">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gkm-2J-ltP" firstAttribute="leading" secondItem="Lr0-pm-N81" secondAttribute="leading" id="1U3-aM-mG1"/>
+                <constraint firstItem="gkm-2J-ltP" firstAttribute="top" secondItem="Lr0-pm-N81" secondAttribute="top" id="G2G-9Q-j8K"/>
+                <constraint firstAttribute="bottom" secondItem="GPl-md-v2e" secondAttribute="bottom" id="UFF-Xh-mly"/>
+                <constraint firstAttribute="bottom" secondItem="gkm-2J-ltP" secondAttribute="bottom" constant="5" id="Xjp-1A-rWW"/>
+                <constraint firstItem="GPl-md-v2e" firstAttribute="leading" secondItem="Lr0-pm-N81" secondAttribute="leading" id="Zwn-f2-X7N"/>
+                <constraint firstAttribute="trailing" secondItem="GPl-md-v2e" secondAttribute="trailing" id="bL2-Cq-8fQ"/>
+                <constraint firstAttribute="trailing" secondItem="gkm-2J-ltP" secondAttribute="trailing" id="cgg-p9-zm1"/>
+                <constraint firstItem="GPl-md-v2e" firstAttribute="top" secondItem="Lr0-pm-N81" secondAttribute="top" id="qrG-sc-nJo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35.5" y="-218"/>
+        </view>
+    </objects>
+</document>
